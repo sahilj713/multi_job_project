@@ -13,7 +13,7 @@ pipeline {
  SERVICE_NAME = "ecs_terraform_service"  
  } 
  
-  
+   
  stages {
   
 //   stage('git'){
