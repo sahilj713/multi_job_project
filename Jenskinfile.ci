@@ -50,7 +50,8 @@ pipeline {
 //  checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: '', url: 'https://github.com/sd031/aws_codebuild_codedeploy_nodeJs_demo.git']]])
 //   checkout scmGit(branches: [[name: '*/${BRANCH_NAME}']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/sahilj713/jenkins_build_with_param.git']])
 //   checkout scmGit(branches: [[name: '*/${BRANCH_NAME}']], extensions: [], userRemoteConfigs: [[credentialsId: '8132b76c-71a6-4f19-a91f-a2907ec94321', url: 'git@github.com:sahilj713/jenkins_build_with_param.git']])
-checkout scmGit(branches: [[name: '*/${BRANCH_NAME}']], extensions: [], userRemoteConfigs: [[credentialsId: 'access-credentials', url: 'https://github.com/sahilj713/jenkins_build_with_param.git']])
+//   checkout scmGit(branches: [[name: '*/${BRANCH_NAME}']], extensions: [], userRemoteConfigs: [[credentialsId: 'access-credentials', url: 'https://github.com/sahilj713/jenkins_build_with_param.git']])
+ checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/sahilj713/multi_job_project.git']]) 
  }
  }
  
