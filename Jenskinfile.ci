@@ -11,7 +11,7 @@ pipeline {
  CLUSTER_NAME = "ecs-cluster"
  TASKDEF_NAME = "ecs_terraform_task_def" 
  SERVICE_NAME = "ecs_terraform_service"  
- }
+ } 
  
  
  stages {
